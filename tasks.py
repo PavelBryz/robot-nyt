@@ -2,7 +2,7 @@ from datetime import date, datetime
 
 from RPA.Browser.Selenium import Selenium
 from RPA.Robocorp.WorkItems import WorkItems, FileAdapter, EmptyQueue
-from selenium.common import NoSuchElementException, TimeoutException
+from selenium.common import NoSuchElementException, TimeoutException, ElementClickInterceptedException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
@@ -103,7 +103,7 @@ def scroll(max_date: datetime):
         # Button that loads next 10 records
         try:
             driver.find_element(by=By.XPATH, value=r'//button[@data-testid="search-show-more-button"]').click()
-        except NoSuchElementException:
+        except (NoSuchElementException, ElementClickInterceptedException):
             return
         # Get last news article
         date_of_last_el = driver.find_element(by=By.XPATH,
