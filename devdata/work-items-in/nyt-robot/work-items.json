@@ -1,0 +1,55 @@
+[
+    {
+        "payload": {
+            "Query": "Robocorp",
+            "Sections": [
+                "All"
+            ],
+            "Types": [
+                "All"
+            ],
+            "Months": "0"
+        },
+        "files": {}
+    },
+    {
+        "payload": {
+            "Query": "RPA",
+            "Sections": [
+                "All"
+            ],
+            "Types": [
+                "All"
+            ],
+            "Months": "24"
+        },
+        "files": {}
+    },
+    {
+        "payload": {
+            "Query": "Putin",
+            "Sections": [
+                "All"
+            ],
+            "Types": [
+                "All"
+            ],
+            "Months": "1"
+        },
+        "files": {}
+    },
+    {
+        "payload": {
+            "Query": "Pacific Australia Drone Gold",
+            "Sections": [
+                "Arts",
+                "Movies"
+            ],
+            "Types": [
+                "All"
+            ],
+            "Months": "120"
+        },
+        "files": {}
+    }
+]
