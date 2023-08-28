@@ -8,7 +8,7 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
 from helpers import add_months, get_date, UrlConstructor
-from printers import ExcelPrinter, Printer
+from printers import Printer, CSVPrinter
 from structures import Article
 
 #
@@ -236,4 +236,4 @@ def main(printer: Printer):
 
 
 if __name__ == "__main__":
-    main(ExcelPrinter())
+    main(CSVPrinter())
