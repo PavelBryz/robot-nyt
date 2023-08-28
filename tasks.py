@@ -185,7 +185,7 @@ def main(printer: Printer):
     :return:
     """
     try:
-        wi = WorkItems(default_adapter=FileAdapter)
+        wi = WorkItems()
         while True:
             try:
                 wi.get_input_work_item()
