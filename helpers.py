@@ -26,8 +26,7 @@ def get_date(article_date: str):
         except ValueError:
             pass
     # If no valid date format is found, raise a ValueError
-    return datetime.now()
-
+    raise ValueError(f'No valid date format found for date - {article_date}')
 
 
 def add_months(start_date: date, months: int) -> datetime:
